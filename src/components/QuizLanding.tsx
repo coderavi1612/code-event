@@ -41,7 +41,7 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
             </div>
           </div> */}
           <div className="flex items-center justify-center">
-          <img src="https://digital-forge-collective.vercel.app/lovable-uploads/6ff05c58-8005-4193-96b3-61cac4fd1705.png" alt="Code-Club"  className="w-96 h-96 -mb-28 -mt-28"/></div>
+          <img src="fevicon-1.png" alt="Code-Club"  className="w-80 h-80 -mb-24 -mt-32"/></div>
           {/* <h1 className="text-5xl md:text-7xl font-bold text-glow-cyan" style={{ fontFamily: 'Orbitron, sans-serif' }}>
             CODE CLUB
           </h1> */}
@@ -64,7 +64,7 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
                   <span className="text-primary font-bold">1</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-primary">Starting Credits: <span className="text-green-500"> &nbsp; 100 Credits</span></p>
+                  <p className="font-semibold text-primary">Starting Credits: <span className="text-green-500"> 100 Credits</span></p>
                   <p className="text-sm text-muted-foreground">Keep your credits high to win!</p>
                 </div>
               </div>
