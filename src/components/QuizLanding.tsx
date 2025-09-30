@@ -34,16 +34,18 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
       <div className="max-w-2xl w-full space-y-8 animate-slide-up">
         {/* Logo/Header */}
         <div className="text-center space-y-4">
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <div className="relative">
               <Code2 className="w-20 h-20 text-primary animate-glow-pulse" />
               <Zap className="w-8 h-8 text-accent absolute -top-2 -right-2 animate-pulse" />
             </div>
-          </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-glow-cyan" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+          </div> */}
+          <div className="flex items-center justify-center">
+          <img src="https://digital-forge-collective.vercel.app/lovable-uploads/6ff05c58-8005-4193-96b3-61cac4fd1705.png" alt="Code-Club"  className="w-96 h-96 -mb-28 -mt-28"/></div>
+          {/* <h1 className="text-5xl md:text-7xl font-bold text-glow-cyan" style={{ fontFamily: 'Orbitron, sans-serif' }}>
             CODE CLUB
-          </h1>
-          <p className="text-2xl md:text-3xl text-secondary text-glow-purple" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+          </h1> */}
+          <p className="text-2xl md:text-4xl text-secondary text-glow-purple" style={{ fontFamily: 'Orbitron, sans-serif' }}>
             QUIZ CHALLENGE
           </p>
         </div>
@@ -62,7 +64,7 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
                   <span className="text-primary font-bold">1</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-primary">Starting Credits: 100</p>
+                  <p className="font-semibold text-primary">Starting Credits: <span className="text-green-500"> &nbsp; 100 Credits</span></p>
                   <p className="text-sm text-muted-foreground">Keep your credits high to win!</p>
                 </div>
               </div>
@@ -72,7 +74,7 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
                   <span className="text-secondary font-bold">2</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-secondary">Wrong Answer: -5 Credits</p>
+                  <p className="font-semibold text-secondary">Wrong Answer: <span className="text-red-500"> &nbsp;- 5 Credits</span> </p>
                   <p className="text-sm text-muted-foreground">Think carefully before submitting!</p>
                 </div>
               </div>
@@ -82,7 +84,7 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
                   <span className="text-accent font-bold">3</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-accent">Skipped Question: -10 Credits</p>
+                  <p className="font-semibold text-accent">Skipped Question: <span className="text-red-500"> &nbsp;-10 Credits</span> </p>
                   <p className="text-sm text-muted-foreground">It's better to try than skip!</p>
                 </div>
               </div>
