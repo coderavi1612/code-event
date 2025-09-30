@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cyberpunk Dark Theme - Neon Glow Colors */
+    --background: 240 10% 3.9%;
+    --foreground: 180 100% 90%;
+
+    --card: 240 10% 6%;
+    --card-foreground: 180 100% 90%;
+
+    --popover: 240 10% 6%;
+    --popover-foreground: 180 100% 90%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 240 10% 3.9%;
+
+    --secondary: 280 100% 60%;
+    --secondary-foreground: 240 10% 3.9%;
+
+    --muted: 240 10% 15%;
+    --muted-foreground: 180 50% 60%;
+
+    --accent: 320 100% 60%;
+    --accent-foreground: 240 10% 3.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 180 50% 20%;
+    --input: 240 10% 12%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Neon Glow Effects */
+    --glow-cyan: 0 0 20px hsla(180, 100%, 50%, 0.5);
+    --glow-purple: 0 0 20px hsla(280, 100%, 60%, 0.5);
+    --glow-pink: 0 0 20px hsla(320, 100%, 60%, 0.5);
+    
+    /* Grid Background */
+    --grid-color: hsla(180, 100%, 50%, 0.1);
+  }
+}
+
+@layer utilities {
+  .text-glow-cyan {
+    text-shadow: 0 0 10px hsla(180, 100%, 50%, 0.8),
+                 0 0 20px hsla(180, 100%, 50%, 0.5),
+                 0 0 30px hsla(180, 100%, 50%, 0.3);
+  }
+  
+  .text-glow-purple {
+    text-shadow: 0 0 10px hsla(280, 100%, 60%, 0.8),
+                 0 0 20px hsla(280, 100%, 60%, 0.5),
+                 0 0 30px hsla(280, 100%, 60%, 0.3);
+  }
+  
+  .text-glow-pink {
+    text-shadow: 0 0 10px hsla(320, 100%, 60%, 0.8),
+                 0 0 20px hsla(320, 100%, 60%, 0.5),
+                 0 0 30px hsla(320, 100%, 60%, 0.3);
+  }
+  
+  .box-glow-cyan {
+    box-shadow: 0 0 20px hsla(180, 100%, 50%, 0.3),
+                0 0 40px hsla(180, 100%, 50%, 0.2),
+                inset 0 0 20px hsla(180, 100%, 50%, 0.1);
+  }
+  
+  .box-glow-purple {
+    box-shadow: 0 0 20px hsla(280, 100%, 60%, 0.3),
+                0 0 40px hsla(280, 100%, 60%, 0.2),
+                inset 0 0 20px hsla(280, 100%, 60%, 0.1);
+  }
+  
+  .box-glow-pink {
+    box-shadow: 0 0 20px hsla(320, 100%, 60%, 0.3),
+                0 0 40px hsla(320, 100%, 60%, 0.2),
+                inset 0 0 20px hsla(320, 100%, 60%, 0.1);
+  }
+
+  .cyber-grid {
+    background-image: 
+      linear-gradient(var(--grid-color) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+  }
+
+  @keyframes grid-move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground cyber-grid;
+    font-family: 'Inter', 'Orbitron', sans-serif;
+  }
+}
