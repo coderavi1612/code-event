@@ -93,6 +93,7 @@ const QuizInterface = ({ teamName, questions, onComplete }: QuizInterfaceProps) 
         toast.warning("Wrong! You have one more chance to answer.", {
           duration: 2000,
         });
+        setFeedback("wrong");
         setAnswer("");
         setTimeout(() => {
           setFeedback(null);
