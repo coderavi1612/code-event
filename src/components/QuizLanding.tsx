@@ -60,11 +60,11 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
             
             <div className="grid gap-4 text-foreground/90">
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 border border-primary">
-                  <span className="text-primary font-bold">1</span>
+                <div className="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 border border-secondary">
+                  <span className="text-secondary font-bold">1</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-primary">Starting Credits: <span className="text-green-500"> 100 Credits</span></p>
+                  <p className="font-semibold text-green-500">Starting Credits: <span className="text-green-500"> 100 Credits</span></p>
                   <p className="text-sm text-muted-foreground">Keep your credits high to win!</p>
                 </div>
               </div>
@@ -74,28 +74,28 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
                   <span className="text-secondary font-bold">2</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-secondary">Wrong Answer: <span className="text-red-500"> &nbsp;- 5 Credits</span> </p>
-                  <p className="text-sm text-muted-foreground">You get 2 attempts per question. Answer shown on 2nd wrong attempt.</p>
+                  <p className="font-semibold text-red-500">Wrong Answer: <span className="text-red-500"> &nbsp;- 5 Credits</span> </p>
+                  <p className="text-sm text-muted-foreground">You get 2 attempts per question. </p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 border border-accent">
-                  <span className="text-accent font-bold">3</span>
+                <div className="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 border border-secondary">
+                  <span className="text-secondary font-bold">3</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-accent">Skipped Question: <span className="text-red-500"> &nbsp;-10 Credits</span> </p>
+                  <p className="font-semibold text-red-500">Skipped Question: <span className="text-red-500"> &nbsp;-10 Credits</span> </p>
                   <p className="text-sm text-muted-foreground">It's better to try than skip!</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 border border-primary">
-                  <span className="text-primary font-bold">4</span>
+                <div className="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 border border-secondary">
+                  <span className="text-secondary font-bold">4</span>
                 </div>
                 <div>
                   <p className="font-semibold text-primary">10 Random Questions</p>
-                  <p className="text-sm text-muted-foreground">From a pool of 50 questions</p>
+                  <p className="text-sm text-muted-foreground">Every correct answer boosts your chances!</p>
                 </div>
               </div>
             </div>
@@ -106,14 +106,14 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="bg-card border-2 border-secondary/30 rounded-lg p-6 box-glow-purple backdrop-blur-sm">
             <label htmlFor="teamName" className="block text-lg font-semibold text-secondary mb-3">
-              Enter Your Name / Team Name
+              Enter Your Team Name
             </label>
             <Input
               id="teamName"
               type="text"
               value={teamName}
               onChange={(e) => setTeamName(e.target.value)}
-              placeholder="e.g., Team Alpha or John Doe"
+              placeholder="e.g., Team Alpha "
               className="h-14 text-lg bg-input border-2 border-primary/30 focus:border-primary text-foreground placeholder:text-muted-foreground"
               required
             />
