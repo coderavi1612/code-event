@@ -42,6 +42,7 @@ const QuizInterface = ({ teamName, questions, onComplete }: QuizInterfaceProps) 
     wrongAnswers: 0,
   });
   const [feedback, setFeedback] = useState<"correct" | "wrong" | null>(null);
+  const [attempts, setAttempts] = useState(0);
 
   const currentQuestion = questions[currentIndex];
   const progress = ((currentIndex + 1) / questions.length) * 100;
@@ -49,6 +50,7 @@ const QuizInterface = ({ teamName, questions, onComplete }: QuizInterfaceProps) 
   useEffect(() => {
     setFeedback(null);
     setAnswer("");
+    setAttempts(0);
   }, [currentIndex]);
 
   const normalizeString = (str: string) => {
@@ -70,24 +72,52 @@ const QuizInterface = ({ teamName, questions, onComplete }: QuizInterfaceProps) 
       toast.success("Correct! No credits deducted! 🎉", {
         duration: isLastQuestion ? 1000 : 2000,
       });
+      
+      if (isLastQuestion) {
+        setTimeout(() => {
+          completeQuiz(finalCredits);
+        }, 1000);
+      } else {
+        setFeedback("correct");
+        setTimeout(() => {
+          setCurrentIndex(prev => prev + 1);
+        }, 2000);
+      }
     } else {
-      finalCredits = Math.max(0, credits - 5);
-      setCredits(finalCredits);
-      setStats(prev => ({ ...prev, wrongAnswers: prev.wrongAnswers + 1, questionsAnswered: prev.questionsAnswered + 1 }));
-      toast.error(`Wrong! -5 credits. Correct answer: ${currentQuestion.answer}`, {
-        duration: isLastQuestion ? 1000 : 3000,
-      });
-    }
-
-    if (isLastQuestion) {
-      setTimeout(() => {
-        completeQuiz(finalCredits);
-      }, 1000);
-    } else {
-      setFeedback(isCorrect ? "correct" : "wrong");
-      setTimeout(() => {
-        setCurrentIndex(prev => prev + 1);
-      }, 2000);
+      // Wrong answer logic
+      const currentAttempt = attempts + 1;
+      setAttempts(currentAttempt);
+      
+      if (currentAttempt === 1) {
+        // First wrong attempt - no credit deduction, allow retry
+        toast.warning("Wrong! You have one more chance to answer.", {
+          duration: 2000,
+        });
+        setFeedback("wrong");
+        setAnswer("");
+        setTimeout(() => {
+          setFeedback(null);
+        }, 2000);
+      } else {
+        // Second wrong attempt - deduct credits and move on
+        finalCredits = Math.max(0, credits - 5);
+        setCredits(finalCredits);
+        setStats(prev => ({ ...prev, wrongAnswers: prev.wrongAnswers + 1, questionsAnswered: prev.questionsAnswered + 1 }));
+        toast.error(`Wrong again! -5 credits. Correct answer: ${currentQuestion.answer}`, {
+          duration: isLastQuestion ? 1000 : 3000,
+        });
+        
+        if (isLastQuestion) {
+          setTimeout(() => {
+            completeQuiz(finalCredits);
+          }, 1000);
+        } else {
+          setFeedback("wrong");
+          setTimeout(() => {
+            setCurrentIndex(prev => prev + 1);
+          }, 2000);
+        }
+      }
     }
   };
 
