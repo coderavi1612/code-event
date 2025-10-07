@@ -60,7 +60,7 @@ const QuizComplete = ({ stats }: QuizCompleteProps) => {
         <div className="bg-card border-2 border-primary/30 rounded-lg p-8 box-glow-cyan backdrop-blur-sm">
           <div className="text-center space-y-6">
             <div>
-              <p className="text-lg text-muted-foreground mb-2">Participant</p>
+              <p className="text-lg text-muted-foreground mb-2">Team</p>
               <p className="text-3xl font-bold text-primary">{stats.teamName}</p>
             </div>
 

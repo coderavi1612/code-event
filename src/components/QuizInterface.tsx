@@ -153,7 +153,7 @@ const QuizInterface = ({ teamName, questions, onComplete }: QuizInterfaceProps) 
         <div className="bg-card border-2 border-primary/30 rounded-lg p-6 box-glow-cyan backdrop-blur-sm">
           <div className="flex justify-between items-center flex-wrap gap-4">
             <div>
-              <p className="text-sm text-muted-foreground">Participant</p>
+              <p className="text-sm text-muted-foreground">Team</p>
               <p className="text-xl font-bold text-primary">{teamName}</p>
             </div>
             <div className="flex items-center gap-3 bg-primary/10 px-6 py-3 rounded-lg border-2 border-primary">
