@@ -75,7 +75,7 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
                 </div>
                 <div>
                   <p className="font-semibold text-secondary">Wrong Answer: <span className="text-red-500"> &nbsp;- 5 Credits</span> </p>
-                  <p className="text-sm text-muted-foreground">Think carefully before submitting!</p>
+                  <p className="text-sm text-muted-foreground">You get 2 attempts per question. Answer shown on 2nd wrong attempt.</p>
                 </div>
               </div>
               
