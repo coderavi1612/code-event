@@ -93,7 +93,6 @@ const QuizInterface = ({ teamName, questions, onComplete }: QuizInterfaceProps) 
         toast.warning("Wrong! You have one more chance to answer.", {
           duration: 2000,
         });
-        setFeedback("wrong");
         setAnswer("");
         setTimeout(() => {
           setFeedback(null);
@@ -199,7 +198,9 @@ const QuizInterface = ({ teamName, questions, onComplete }: QuizInterfaceProps) 
                 ) : (
                   <>
                     <XCircle className="w-6 h-6" />
-                    <p className="font-semibold">Wrong! Correct: {currentQuestion.answer}</p>
+                    <p className="font-semibold">
+                      {attempts === 2 ? `Wrong! Correct: ${currentQuestion.answer}` : "Wrong! Try again!"}
+                    </p>
                   </>
                 )}
               </div>
