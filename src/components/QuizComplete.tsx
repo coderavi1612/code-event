@@ -16,7 +16,7 @@ const QuizComplete = ({ stats }: QuizCompleteProps) => {
 
   const saveResults = async () => {
     try {
-      const { error } = await supabase.from("quiz_results").insert({
+      const { error } = await (supabase as any).from("quiz_results").insert({
         team_name: stats.teamName,
         credits_remaining: stats.creditsRemaining,
         questions_answered: stats.questionsAnswered,

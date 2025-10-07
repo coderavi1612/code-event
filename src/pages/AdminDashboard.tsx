@@ -40,7 +40,7 @@ const AdminDashboard = () => {
 
   const fetchAllResults = async () => {
     try {
-      const { data, error } = await supabase.rpc("get_all_quiz_results");
+      const { data, error } = await (supabase as any).rpc("get_all_quiz_results");
 
       if (error) throw error;
 
