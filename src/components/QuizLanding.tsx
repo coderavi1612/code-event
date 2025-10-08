@@ -64,7 +64,7 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
                   <span className="text-secondary font-bold">1</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-green-500">Starting Credits: <span className="text-green-500"> 100 Credits</span></p>
+                  <p className="font-semibold text-green-500">Starting Credits: <span className="text-green-500"> 250 Credits</span></p>
                   <p className="text-sm text-muted-foreground">Keep your credits high to win!</p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
                   <span className="text-secondary font-bold">4</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-primary">10 Random Questions</p>
+                  <p className="font-semibold text-primary">25 Random Questions</p>
                   <p className="text-sm text-muted-foreground">Every correct answer boosts your chances!</p>
                 </div>
               </div>
