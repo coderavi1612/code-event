@@ -34,7 +34,7 @@ const QuizInterface = ({ teamName, questions, onComplete }: QuizInterfaceProps) 
   const [startTime] = useState(Date.now());
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answer, setAnswer] = useState("");
-  const [credits, setCredits] = useState(100);
+  const [credits, setCredits] = useState(250);
   const [stats, setStats] = useState({
     questionsAnswered: 0,
     questionsSkipped: 0,
