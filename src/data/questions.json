@@ -1,252 +1,217 @@
 [
   {
     "id": 1,
-    "question": "What does ML stand for in computer science?",
+    "question": "What does ML stand for in computer science? (Don't include space in answer)",
     "answer": "MachineLearning"
   },
   {
     "id": 2,
-    "question": "Stack insertion complexity?",
+    "question": "Stack insertion complexity? (Don't include space in answer)",
     "answer": "O(1)"
   },
   {
     "id": 3,
-    "question": "Queue insertion complexity?",
+    "question": "Queue insertion complexity? (Don't include space in answer)",
     "answer": "O(1)"
   },
   {
     "id": 4,
-    "question": "Accessing an element in an array?",
+    "question": "Accessing an element in an array? (Don't include space in answer)",
     "answer": "O(1)"
   },
   {
-    "id": 5,
-    "question": "Searching in a sorted array using binary search?",
-    "answer": "O(logn)"
-  },
-  {
     "id": 6,
-    "question": "Time complexity of bubble sort worst case?",
+    "question": "Time complexity of bubble sort worst case? (Don't include space in answer)",
     "answer": "O(n^2)"
   },
   {
     "id": 7,
-    "question": "Time complexity of merge sort?",
+    "question": "Time complexity of merge sort? (Don't include space in answer)",
     "answer": "O(nlogn)"
   },
   {
-    "id": 8,
-    "question": "Data structure using FIFO?",
-    "answer": "Queue"
-  },
-  {
-    "id": 9,
-    "question": "Data structure using LIFO?",
-    "answer": "Stack"
-  },
-  {
-    "id": 10,
-    "question": "Python mutable data type?",
-    "answer": "List"
-  },
-  {
     "id": 11,
-    "question": "Python immutable data type?",
+    "question": "Python immutable data type? (Don't include space in answer)",
     "answer": "Tuple"
   },
   {
     "id": 12,
-    "question": "Keyword to define a class in C++?",
+    "question": "Keyword to define a class in C++? (Don't include space in answer)",
     "answer": "class"
   },
   {
     "id": 13,
-    "question": "Operator to access value at a pointer in C/C++?",
+    "question": "Operator to access value at a pointer in C/C++? (Don't include space in answer)",
     "answer": "*"
   },
   {
-    "id": 14,
-    "question": "Recursion base case is used for?",
-    "answer": "Stopping"
-  },
-  {
     "id": 15,
-    "question": "Keyword to define a function in Python?",
+    "question": "Keyword to define a function in Python? (Don't include space in answer)",
     "answer": "def"
   },
   {
     "id": 16,
-    "question": "Time complexity of deleting from a stack?",
+    "question": "Time complexity of deleting from a stack? (Don't include space in answer)",
     "answer": "O(1)"
   },
   {
     "id": 17,
-    "question": "Time complexity of accessing element in linked list?",
+    "question": "Time complexity of accessing element in linked list? (Don't include space in answer)",
     "answer": "O(n)"
   },
   {
     "id": 18,
-    "question": "Time complexity of searching in unsorted array?",
+    "question": "Time complexity of searching in unsorted array? (Don't include space in answer)",
     "answer": "O(n)"
   },
   {
     "id": 19,
-    "question": "Keyword to inherit a class in C++?",
+    "question": "Keyword to inherit a class in C++? (Don't include space in answer)",
     "answer": "public"
   },
   {
     "id": 20,
-    "question": "Python keyword for exception handling?",
+    "question": "Python keyword for exception handling? (Don't include space in answer)",
     "answer": "try"
   },
   {
     "id": 21,
-    "question": "Time complexity of linear search?",
+    "question": "Time complexity of linear search? (Don't include space in answer)",
     "answer": "O(n)"
   },
   {
     "id": 22,
-    "question": "Time complexity of binary search?",
+    "question": "Time complexity of binary search? (Don't include space in answer)",
     "answer": "O(logn)"
   },
   {
     "id": 23,
-    "question": "Time complexity of insertion sort worst case?",
+    "question": "Time complexity of insertion sort worst case? (Don't include space in answer)",
     "answer": "O(n^2)"
   },
   {
     "id": 24,
-    "question": "Time complexity of quicksort average case?",
+    "question": "Time complexity of quicksort average case? (Don't include space in answer)",
     "answer": "O(nlogn)"
   },
   {
     "id": 25,
-    "question": "DFS stands for?",
+    "question": "DFS stands for? (Don't include space in answer)",
     "answer": "DepthFirstSearch"
   },
   {
     "id": 26,
-    "question": "BFS stands for?",
+    "question": "BFS stands for? (Don't include space in answer)",
     "answer": "BreadthFirstSearch"
   },
   {
     "id": 27,
-    "question": "Algorithm used for shortest path in weighted graph?",
+    "question": "Algorithm used for shortest path in weighted graph? (Don't include space in answer)",
     "answer": "Dijkstra"
   },
   {
     "id": 28,
-    "question": "Algorithm used for minimum spanning tree?",
+    "question": "Algorithm used for minimum spanning tree? (Don't include space in answer)",
     "answer": "Kruskal"
   },
   {
     "id": 29,
-    "question": "Algorithm used for topological sorting?",
+    "question": "Algorithm used for topological sorting? (Don't include space in answer)",
     "answer": "DFS"
   },
   {
     "id": 30,
-    "question": "Algorithm used for searching in hash table?",
+    "question": "Algorithm used for searching in hash table? (Don't include space in answer)",
     "answer": "Hashing"
   },
   {
-    "id": 31,
-    "question": "Algorithm to find maximum subarray sum?",
-    "answer": "Kadane"
-  },
-  {
-    "id": 32,
-    "question": "Algorithm for finding GCD using recursion?",
-    "answer": "Euclid"
-  },
-  {
     "id": 33,
-    "question": "Algorithm to sort almost sorted array efficiently?",
+    "question": "Algorithm to sort almost sorted array efficiently? (Don't include space in answer)",
     "answer": "HeapSort"
   },
   {
     "id": 34,
-    "question": "C output: int a=5,b=2; printf(\"%d\", a/b);",
+    "question": "C output: int a=5,b=2; printf(\"%d\", a/b); (Don't include space in answer)",
     "answer": "2"
   },
   {
     "id": 35,
-    "question": "C++ output: int x=1; cout<<x++ + ++x + x++;",
-    "answer": "Undefined"
-  },
-  {
-    "id": 36,
-    "question": "Python output: print([1,2,3]*2)",
-    "answer": "[1,2,3,1,2,3]"
-  },
-  {
-    "id": 37,
-    "question": "C output: printf(\"%d\", 5%2);",
+    "question": "C output: printf(\"%d\", 5%2); (Don't include space in answer)",
     "answer": "1"
   },
   {
-    "id": 38,
-    "question": "Python output: def f(x,y=[]): y.append(x); return y; print(f(1)); print(f(2))",
-    "answer": "[1],[1,2]"
-  },
-  {
-    "id": 39,
-    "question": "C++ output: string s=\"Code\"; reverse(s.begin(),s.end()); cout<<s;",
-    "answer": "edoC"
-  },
-  {
-    "id": 40,
-    "question": "Python output: lst=[1,2,3]; print(lst*2)",
-    "answer": "[1,2,3,1,2,3]"
-  },
-  {
-    "id": 41,
-    "question": "C output: char *s=\"Code\"; s[0]='M'; printf(\"%s\", s);",
-    "answer": "Error"
-  },
-  {
-    "id": 42,
-    "question": "Python output: print(2**3)",
+    "id": 36,
+    "question": "Python output: print(2**3) (Don't include space in answer)",
     "answer": "8"
   },
   {
-    "id": 43,
-    "question": "C output: int arr[5]={1,2,3,4,5}; printf(\"%d\", arr[5]);",
-    "answer": "Undefined"
-  },
-  {
-    "id": 44,
-    "question": "Difference between stack and queue?",
-    "answer": "Order"
-  },
-  {
-    "id": 45,
-    "question": "Difference between array and linked list?",
-    "answer": "Memory"
-  },
-  {
-    "id": 46,
-    "question": "Python operator for exponentiation?",
+    "id": 37,
+    "question": "Python operator for exponentiation? (Don't include space in answer)",
     "answer": "**"
   },
   {
-    "id": 47,
-    "question": "Keyword for private members in C++?",
+    "id": 38,
+    "question": "Keyword for private members in C++? (Don't include space in answer)",
     "answer": "private"
   },
   {
-    "id": 48,
-    "question": "Keyword for protected members in C++?",
+    "id": 39,
+    "question": "Keyword for protected members in C++? (Don't include space in answer)",
     "answer": "protected"
   },
   {
-    "id": 49,
-    "question": "Python operator for floor division?",
+    "id": 40,
+    "question": "Python operator for floor division? (Don't include space in answer)",
     "answer": "//"
   },
   {
-    "id": 50,
-    "question": "Default boolean value in Java?",
+    "id": 41,
+    "question": "Default boolean value in Java? (Don't include space in answer)",
     "answer": "false"
+  },
+  {
+    "id": 42,
+    "question": "Data structure used in recursion? (Don't include space in answer)",
+    "answer": "Stack"
+  },
+  {
+    "id": 43,
+    "question": "Sorting algorithm with divide and conquer? (Don't include space in answer)",
+    "answer": "MergeSort"
+  },
+  {
+    "id": 44,
+    "question": "Data structure used in BFS? (Don't include space in answer)",
+    "answer": "Queue"
+  },
+  {
+    "id": 45,
+    "question": "C++ keyword for dynamic memory allocation? (Don't include space in answer)",
+    "answer": "new"
+  },
+  {
+    "id": 46,
+    "question": "C keyword for dynamic memory allocation? (Don't include space in answer)",
+    "answer": "malloc"
+  },
+  {
+    "id": 47,
+    "question": "Data structure used in function call stack? (Don't include space in answer)",
+    "answer": "Stack"
+  },
+  {
+    "id": 48,
+    "question": "Best case time complexity of quicksort? (Don't include space in answer)",
+    "answer": "O(nlogn)"
+  },
+  {
+    "id": 49,
+    "question": "Worst case time complexity of quicksort? (Don't include space in answer)",
+    "answer": "O(n^2)"
+  },
+  {
+    "id": 50,
+    "question": "Time complexity of heap sort? (Don't include space in answer)",
+    "answer": "O(nlogn)"
   }
 ]
