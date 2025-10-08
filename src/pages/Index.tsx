@@ -20,7 +20,7 @@ const Index = () => {
 
   const getRandomQuestions = (): Question[] => {
     const shuffled = [...questionsData].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, 10);
+    return shuffled.slice(0, 25);
   };
 
   const handleStart = (name: string) => {
